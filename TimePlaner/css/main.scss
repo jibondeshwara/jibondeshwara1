@@ -1,0 +1,456 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.Conatiner {
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.dFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.herAreiaPt {
+    padding-top: 15%;
+}
+
+
+/*===============================  Navbar style ================================*/
+
+#mainNav {
+    width: 100%;
+    height: 10vh;
+    background: whitesmoke;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .navLeft {
+        width: 50%;
+
+        a img {
+            margin-top: 0.3rem;
+            width: 100px;
+            height: 50px;
+            object-fit: cover;
+        }
+    }
+
+    .navRight {
+        display: flex;
+
+        ul {
+            display: flex;
+
+            li {
+                padding-right: 1rem;
+
+                a {
+                    color: #000;
+                    transition: 0.5s;
+
+                    &:hover {
+                        color: orange;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*===============================  Navbar style end ================================*/
+
+/*===============================  Hero section style start ================================*/
+
+#mainHeroSection {
+    width: 100%;
+    height: 90vh;
+    background: url(../img/herosection.jpg), rgba(0, 0, 0, 0.5);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: color;
+
+    .heroTitle {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #fff;
+        text-align: center;
+
+        h3 {
+            font-weight: 500;
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            font-weight: 800;
+            font-size: 2.5rem;
+            margin-bottom: 2.5rem;
+        }
+    }
+
+    #appsBtn {
+        text-align: center;
+        color: gray;
+
+        .appBtnStyle {
+            background: #fff;
+            margin-right: 1.5rem;
+            font-size: 1rem;
+            color: gray;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            border-radius: 5px;
+        }
+    }
+}
+
+/*===============================  Hero section style end ================================*/
+
+/*===============================  Services section style start ================================*/
+
+#searvicesSection {
+    width: 100%;
+    height: 200vh;
+    background: whitesmoke;
+
+    .servicesTitle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 5%;
+        margin-bottom: 3rem;
+
+        h1 {
+            font-weight: 800;
+            font-size: 1.5;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin-bottom: 1rem;
+        }
+
+        h5 {
+            font-weight: 500;
+
+        }
+
+    }
+
+    #ourSearvicesPlan {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .pconter {
+            padding-left: 2%;
+            padding-right: 2%;
+            padding-top: 2%;
+        }
+
+        .planList {
+            width: 30%;
+            height: 150vh;
+            background: #fff;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            border-radius: 5px;
+
+            h3 {
+                font-size: 1rem;
+                margin-bottom: 1rem;
+            }
+
+            h4 {
+                margin-bottom: 1rem;
+            }
+
+            .planPrice {
+                width: 100%;
+                height: 4rem;
+                background: whitesmoke;
+                margin-bottom: 1rem;
+                display: flex;
+                justify-content: flex-start;
+                padding-left: 6px;
+                align-items: center;
+                margin-bottom: 1.5rem;
+
+                h1 {
+                    font-size: 2.5rem;
+
+                    span {
+                        font-size: 1rem;
+                    }
+                }
+
+            }
+        }
+
+        .planListProduct {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            flex-direction: column;
+            margin-top: 2rem;
+
+            ul>li {
+                color: orange;
+                font-size: 1.5rem;
+                padding-bottom: 2rem;
+
+                span {
+                    margin-left: 2rem;
+                    color: gray;
+                }
+            }
+
+        }
+
+        #serviceBTN {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 1.5rem;
+
+            .servicesBTN {
+                background: whitesmoke;
+                margin-right: 1.5rem;
+                font-size: 1rem;
+                color: gray;
+                padding-left: 2rem;
+                padding-right: 2rem;
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+                border-radius: 5px;
+                box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+
+            }
+        }
+
+    }
+
+}
+
+/*===============================  Services section style end ================================*/
+
+#ourTeamSection {
+    width: 100%;
+    height: 100vh;
+    z-index: 154465464;
+
+    .teamtitle {
+        padding-top: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .teamMember {
+        background: #fff;
+        padding-top: 3rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+
+        .teamMemberList {
+            width: 22.5%;
+            border: 2px solid orange;
+            height: 20rem;
+            z-index: 121121;
+
+            .extraBorder {
+                background: #fff;
+            }
+
+            .temMemberProfile {
+                width: 22%;
+
+                img {
+                    width: 15rem;
+                    padding: 1rem;
+                }
+
+            }
+
+            .intro {
+                background: whitesmoke;
+                height: 4rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+
+                p {
+                    color: gray;
+                }
+            }
+        }
+    }
+
+}
+
+/*===============================  Suscrive section style end ================================*/
+
+#sescriveSection {
+    width: 100%;
+    height: 80vh;
+    background: whitesmoke;
+
+    .subcTitle {
+        padding-top: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        h1 {
+            margin-top: 2rem;
+            margin-bottom: 3rem;
+            font-size: 3rem;
+        }
+    }
+
+
+    .fromControl {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        input {
+            width: 40vw;
+            height: 3rem;
+            outline: none;
+            border: 2px solid orange;
+            border-radius: 5px;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .subcBtn {
+            background: rgb(214, 182, 75);
+            margin-right: 1.5rem;
+            font-size: 1rem;
+            color: #fff;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+    }
+
+}
+
+/*===============================  whay choice section style start ================================*/
+
+#whayChoiceSection {
+    width: 100%;
+    height: 100vh;
+    background: white;
+
+    .choiseTitle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .lefSideContent {
+        width: 50%;
+
+        img {
+            width: 25rem;
+            object-fit: cover;
+        }
+    }
+
+    .dflex {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .rightSideContent {
+        padding-left: 5rem;
+        li{
+            padding-bottom: 1rem;
+        }
+    }
+
+}
+
+
+/*===============================  feedback section style start ================================*/
+
+#feedbackSection{
+    width: 100%;
+    height: 100vh;
+    background: #eeeeeeee;
+
+    .feedbackTitle{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 2rem;
+        place-content: 2rem;
+             
+        p{
+            margin-bottom: 2rem;
+        }
+        h1{
+            margin-bottom: 2rem;
+        }
+    }
+
+    .claintrevew {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        .contentspace{
+            padding: 2%;
+        }
+
+        .clinteList {
+            width: 30%;
+            height: 22rem;
+            background: transparent;
+            border: 2 px solid rgb(216, 52, 52);
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+    }
+}
+
